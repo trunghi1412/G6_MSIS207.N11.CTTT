@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/G6_MSIS207.N11.CTTT/static/css/main.073c9b0a.css",
+    "main.js": "/G6_MSIS207.N11.CTTT/static/js/main.9d5b26fc.js",
+    "static/js/787.de493eff.chunk.js": "/G6_MSIS207.N11.CTTT/static/js/787.de493eff.chunk.js",
+    "index.html": "/G6_MSIS207.N11.CTTT/index.html",
+    "main.073c9b0a.css.map": "/G6_MSIS207.N11.CTTT/static/css/main.073c9b0a.css.map",
+    "main.9d5b26fc.js.map": "/G6_MSIS207.N11.CTTT/static/js/main.9d5b26fc.js.map",
+    "787.de493eff.chunk.js.map": "/G6_MSIS207.N11.CTTT/static/js/787.de493eff.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.9d5b26fc.js"
+  ]
+}
