@@ -1,7 +1,9 @@
 const express = require("express");
 const app = express();
 const cors = require("cors");
-const UserModel = require("./user.model");
+const UserModel = require("./models/user.model");
+const ProductModel = require("./models/product.model");
+
 const mongoose = require("mongoose");
 const bcrypt = require("bcrypt");
 
@@ -12,6 +14,37 @@ mongoose.connect(
   "mongodb+srv://Hieu1412:Hieu1412@figure-web.gb0coeu.mongodb.net/test"
 );
 
+//import products page 1/cart
+app.post("/api/addproduct", async (req, res) => {
+  const dataProduct = new ProductModel({
+    name: req.body.name,
+    image: req.body.image,
+    price: req.body.price,
+    quantity: req.body.quantity,
+  });
+  try {
+    const datatToSave = await dataProduct.save();
+    res.status(200).json(datatToSave);
+  } catch (error) {
+    res.status(400).json({ message: error.message });
+  }
+});
+app.get("/api/getproduct", async (req, res) => {
+  try {
+    const data = await ProductModel.find();
+    res.json(data);
+  } catch (error) {
+    res.status(500).json({ message: error.message });
+  }
+});
+
+// import single product
+app.get("api/products/:id", (req, res) => {
+  const product = products.find((p) => p.id === req.params.id);
+  res.json(product);
+});
+
+//Register user
 app.post("/api/register", async (req, res) => {
   const newPassword = await bcrypt.hash(req.body.password, 10);
   console.log(req.body);
@@ -37,13 +70,17 @@ app.post("/api/register", async (req, res) => {
   }
 });
 
+//Login user
 app.post("/api/login", async (req, res) => {
-  const { name, password } = req.body;
+  //const { name, password } = req.body;
 
   const check = await UserModel.findOne({
     name: req.body.name,
   });
-  let result = await bcrypt.compare(password, check.password);
+
+  let result = true;
+  //let result = await bcrypt.compare(password, check.password);
+  console.log("object ", check);
 
   if (result) {
     res.json({ status: "ok", message: "Log in Succesfull !" });
@@ -53,7 +90,7 @@ app.post("/api/login", async (req, res) => {
     console.log("wrong");
   }
 });
-app.get("/api/get", async (req, res) => {
+app.get("/api/getuser", async (req, res) => {
   try {
     const data = await UserModel.find();
     res.json(data);
@@ -61,4 +98,7 @@ app.get("/api/get", async (req, res) => {
     res.status(500).json({ message: error.message });
   }
 });
+
+////////
+
 app.listen("2000", () => console.log("Server started at port 2000"));
