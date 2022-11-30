@@ -1,0 +1,50 @@
+footer {
+    background-color: #EA047E;
+    padding: 100px 0;
+    color: #fff;
+  }
+  footer h1 {
+    margin-bottom: 30px;
+    color: #EA047E;
+    font-weight: 800;
+    font-style: italic;
+  }
+  footer .img {
+    background-color: #EA047E;
+    padding: 15px 20px;
+    border-radius: 5px;
+  }
+  footer .img i {
+    font-size: 20px;
+    margin: 8px;
+  }
+  footer .img span {
+    margin-top: 5px;
+  }
+  footer p {
+    font-size: 14px;
+    font-weight: 300;
+    opacity: 0.5;
+    margin-bottom: 20px;
+  }
+  footer h2 {
+    margin-bottom: 20px;
+  }
+  footer li {
+    margin-bottom: 10px;
+    opacity: 0.5;
+    color: #FFFA4D;
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: bold;
+   
+}
+
+.logo_width{
+  display: flex;
+  max-height: 87px;
+  margin: 26px;
+  width: auto;
+  height: auto;
+}
+  
