@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
 /*---SlideCard.jsx----*/
 /* Làm dấu chấm cho chức năng trượt qua */
 .homeSlide h1{
@@ -34,20 +35,39 @@
     display: flex !important;
 }
 
+.homeSlide .box .left{
+    width: 70%;
+}
 .homeSlide .box .right{
-    width: auto;
+    width: auto;  
 }
 
 .homeSlide .box img{
     /* width: 100%; */
-    /* width: 93%; */
-    margin: 48px;   
+    width: 93%;
+    margin: 43px;   
     /* height: 100%; */
-    /* height: 75%; */
-    height: 455px;
-    width: 1233px;
+    height: 75%;
+    /* height: 455px; */
+    /* width: 1233px; */
+    /* width: 1220px; */
     
-    
+}
+
+.left h1{
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Roboto', sans-serif;
+    margin: 95px 35px 59px 16px; 
+    border: 10px solid #15b244;
+}
+
+.left p{
+    text-align: left;
+    font-size: 35px;
+    font-family: 'Roboto', sans-serif;
+    margin: 15px 35px 35px 15px; 
+    line-height: 2;
 }
 
 

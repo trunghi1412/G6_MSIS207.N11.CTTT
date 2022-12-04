@@ -1,4 +1,3 @@
-
 .d_flex {
     /*canh chinh cho phan chu trong "container"*/
     display: flex;  
@@ -36,7 +35,7 @@ input, button {
   }
   
   .top {
-    margin-top: 80px;
+    margin-top: 129px;
   }
   
 
