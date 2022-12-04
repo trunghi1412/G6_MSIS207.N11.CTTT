@@ -1,0 +1,45 @@
+
+.d_flex {
+    /*canh chinh cho phan chu trong "container"*/
+    display: flex;  
+    /* canh chỉnh chữ cho ra 2 bên đều nhau */
+    justify-content: space-between;
+}
+
+.container {
+    max-width: 90%;
+    /* chỉnh khoảng cách trên dưới trong "container" */
+    margin: auto;
+    /* margin: 16px; */
+    /* position: relative;
+    width: 100%;
+    height: 100%; */  
+   
+}
+
+input, button {
+    border: none;
+    outline: none;
+    background-color: none;
+}
+.contentWidth{
+    width: 77%;
+}
+
+/*--------btn-primary trong SlideCard.jsx-------------*/
+.btn-primary {
+    background-color: #e94560;
+    padding: 13px 40px;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 5px;
+  }
+  
+  .top {
+    margin-top: 80px;
+  }
+  
+  .mtop{
+    margin-top: 40px;
+  }
+  /*--------btn-primary trong SlideCard.jsx-------------*/
