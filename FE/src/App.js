@@ -14,7 +14,6 @@ import Slide from "./components/homepage/Slide";
 function App() {
   return (
     <div className="page">
-      <Slide />
       <Header />   
       <Switch>
         <Route path="/login" component={LoginPage} />
@@ -24,6 +23,7 @@ function App() {
 
         <Route path="/register" component={Register} />
          {/* <Route path="/" component={HomePage} /> */}
+         <Route path="/" component={Slide} />
         
       </Switch>
       <Footer />
