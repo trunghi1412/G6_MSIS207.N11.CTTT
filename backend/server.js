@@ -3,7 +3,6 @@ const app = express();
 const cors = require("cors");
 const UserModel = require("./models/user.model");
 const ProductModel = require("./models/product.model");
-
 const mongoose = require("mongoose");
 const bcrypt = require("bcrypt");
 
@@ -38,11 +37,6 @@ app.get("/api/getproduct", async (req, res) => {
   }
 });
 
-// import single product
-app.get("api/products/:id", (req, res) => {
-  const product = products.find((p) => p.id === req.params.id);
-  res.json(product);
-});
 
 //Register user
 app.post("/api/register", async (req, res) => {
@@ -53,16 +47,18 @@ app.post("/api/register", async (req, res) => {
       name: req.body.name,
       email: req.body.email,
       password: newPassword,
+      roleID: 'user'
     });
     user.save(function (err, cat) {
       if (err) {
-        console.log("something Wrong");
+        console.log(err);
       } else {
         console.log("we had done it!");
         console.log(cat);
       }
     });
-    console.log("create succ");
+
+    console.log("create success");
     res.json({ status: "200", message: "ok" });
   } catch (err) {
     console.log(err);
@@ -72,23 +68,29 @@ app.post("/api/register", async (req, res) => {
 
 //Login user
 app.post("/api/login", async (req, res) => {
-  //const { name, password } = req.body;
+  const { name, password } = req.body;
 
   const check = await UserModel.findOne({
     name: req.body.name,
   });
+  console.log (check)
 
-  let result = true;
-  //let result = await bcrypt.compare(password, check.password);
+  // let result = true;
+  let result = await bcrypt.compare(password, check.password);
   console.log("object ", check);
-
-  if (result) {
-    res.json({ status: "ok", message: "Log in Succesfull !" });
-    console.log("true");
-  } else {
-    res.json({ status: "Wrong Name or Password" });
-    console.log("wrong");
-  }
+  console.log('password',password )
+  bcrypt.compare(password, check.password, function (err, result) {
+    // result == true
+    if (result) {
+      res.json({ status: "ok", message: "Log in Succesfull !" });
+      console.log("true");
+    } else {
+      res.json({ status: "Wrong Name or Password" });
+      console.log("wrong");
+    }
+  });
+  // let jj = bcrypt.compareSync(password, check.password); // true
+  // console.log (jj)
 });
 app.get("/api/getuser", async (req, res) => {
   try {
@@ -102,3 +104,4 @@ app.get("/api/getuser", async (req, res) => {
 ////////
 
 app.listen("2000", () => console.log("Server started at port 2000"));
+
