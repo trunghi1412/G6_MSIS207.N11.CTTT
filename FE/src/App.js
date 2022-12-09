@@ -13,7 +13,7 @@ import Slide from "./components/homepage/Slide";
 
 function App() {
   return (
-    <div className="page">
+    <div>
       <Header />   
       <Switch>
         <Route path="/login" component={LoginPage} />

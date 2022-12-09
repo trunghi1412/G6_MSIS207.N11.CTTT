@@ -1,26 +1,26 @@
 const Sdata = [
         {
             id: 1,
-            title: "Tỉ mỉ trong từng chi tiết",
-            desc: "Bằng công nghệ hàng đầu & quy trình giám sát chặt chẽ, figure nhật bản có hồn như bản vẽ gốc, thần thái sống động, chi tiết sắc sảo từ tạo hình tới màu sắc",
+            title: "Meticulous in every detail",
+            desc: "With leading technology & strict supervision process, Japanese figures have the soul of the original drawings, vivid aura, sharp details from shape to color.",
             cover: 'https://animestore.vn/wp-content/uploads/2021/09/mo-hinh-goku.jpg'
         },
         {
             id: 2,
-            title: "Dành cho người mới bắt đầu",
-            desc: "Cách phân biệt thật giả, Cách theo dõi lịch phát hành, Cách vệ sinh Figure, Cách sơn",
+            title: "For beginners",
+            desc: "How to distinguish real from fake, How to track the release schedule, How to clean the Figure, How to paint",
             cover: 'https://animestore.vn/wp-content/uploads/2021/09/1.png'
         },
         {
             id: 3,
-            title: "Khi nào 1 Figure có tại Nhật và về Việt Nam",
-            desc: "Chờ có và được cập nhật thông tin trên fanpage và ngày cho phép đặt",
+            title: "When will a Figure be available in Japan and back to Vietnam?",
+            desc: "Waiting to have and be updated information on fanpage and allow booking date",
             cover: 'https://animestore.vn/wp-content/uploads/2021/09/2-1.png'
         },
         {
             id: 4,
-            title: "Nơi trao đổi và bảo hành Figure",
-            desc: "Fig bạn cần người khác có, Fig bạn có người khác cần",
+            title: "Place of exchange and warranty Figure",
+            desc: "Fig you need someone else to have, Fig you have someone else need",
             cover: 'https://animestore.vn/wp-content/uploads/2021/09/4-1.png'
         }
     

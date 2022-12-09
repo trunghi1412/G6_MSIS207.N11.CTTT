@@ -31,12 +31,14 @@ const LoginPage = () => {
           alert(res.message);
         } else {
           console.log(res.status);
+          /* A message that will be shown when the user enter wrong username or password. */
           alert("Wrong usename or password !");
         }
       });
   };
 
   return (
+    <div className="login-page">
     <div className="cover">
       <div className="log-name">Login</div>
 
@@ -70,6 +72,7 @@ const LoginPage = () => {
           </NavLink>
         </div>
       </form>
+    </div>
     </div>
   );
 };

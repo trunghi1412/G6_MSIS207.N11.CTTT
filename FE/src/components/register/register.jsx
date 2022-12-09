@@ -25,6 +25,7 @@ const Register = () => {
   };
 
   return (
+    <div className="login-page">
     <div className="cover">
       <div className="log-name">Register</div>
 
@@ -56,7 +57,7 @@ const Register = () => {
         />
         <br />
 
-        <button className="login-name-reg" onClick={handleRegister}>
+        <button className="login-name-reg-1" onClick={handleRegister}>
           Submit
         </button>
 
@@ -67,6 +68,7 @@ const Register = () => {
           </NavLink>
         </div>
       </form>
+    </div>
     </div>
   );
 };

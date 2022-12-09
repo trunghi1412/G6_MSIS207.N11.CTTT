@@ -39,8 +39,7 @@
     border-radius: 3px;
     background-color: rgb(73, 92, 18);
     background-position: center;
-    background-size: contain;
-   
+    background-size: contain;  
     cursor: pointer;
 }
 
@@ -57,11 +56,10 @@ input {
     text-decoration: none;
 }
 
-
-
-.login-name {
-    width: 40%;
-    height: 3em;
+.login-name-reg {
+    width: 55%;
+    /* height: 3em; */
+    height: 70px;
     background: linear-gradient(135deg, red 0%, blue 100%);
     color: white;
     display: flex;
@@ -72,12 +70,16 @@ input {
     cursor: pointer;
     font-weight: 500;
     font-size: 22px;
+    margin-left: 66px;
+    margin-top: 30px;
 }
 
-.login-name:hover {
-    background: linear-gradient(45deg, rgb(247, 85, 85) 0%, rgb(184, 244, 63) 100%);
+ .login-name-reg:hover {
+    /* background: linear-gradient(45deg, rgb(247, 85, 85) 0%, rgb(184, 244, 63) 100%); */
     color: white;
-}
+    background: linear-gradient(45deg, rgba(248,85,85,0) 2%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);    
+ }
+
 
 .text {
     position: relative;
@@ -99,3 +101,4 @@ input {
     margin-left: 30px;
     margin-top: 20px;
 }
+

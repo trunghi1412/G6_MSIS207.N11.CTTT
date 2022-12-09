@@ -11,7 +11,7 @@ import './blog.css'
 const Blog = () => {
 
     return (
-        <div className='container'>
+        <div className='container-blog'>
     {
     Blogimg.map(img => (<img className='blog-avt' src={img} alt=''></img>))
     }
