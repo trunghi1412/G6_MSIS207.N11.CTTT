@@ -54,17 +54,28 @@ html {
     cursor: pointer;
 }
 
+/* Styling the buttons. */
+.home-btn,
+.product-btn,
+.intro-btn,
+.blog-btn {
+    text-decoration: none;
+    padding: 16px;
+    transition: 0.5s
+}
+
+/* Adding a box shadow to the buttons when they are hovered over. */
 .home-btn:hover,
 .product-btn:hover,
 .intro-btn:hover,
 .blog-btn:hover {
-    text-decoration: underline;
-   
-    
+    /* text-decoration: underline; */    
+    box-shadow: 0 3px #CB1C8D;
 }
 
 .header .navbar a:hover{
-    color: white;
+    color: #CB1C8D;
+
 }
 
 .header .icons .icon-search,

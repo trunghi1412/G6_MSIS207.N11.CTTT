@@ -36,10 +36,11 @@
 }
 
 .homeSlide .box .left{
-    width: 70%;
+    /* width: 70%;   */
+    width: 100vh;  
 }
 .homeSlide .box .right{
-    width: auto;  
+    width: auto;    
 }
 
 .homeSlide .box img{
@@ -58,7 +59,9 @@
     text-align: center;
     font-size: 35px;
     font-family: 'Roboto', sans-serif;
-    margin: 95px 35px 59px 16px; 
+    /* margin: 95px 35px 59px 16px;  */
+    margin: 50px 35px 59px 16px; 
+
     border: 10px solid #15b244;
 }
 

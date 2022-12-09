@@ -1,17 +1,10 @@
-.d_flex {
-    /*canh chinh cho phan chu trong "container"*/
-    display: flex;  
-    /* canh chỉnh chữ cho ra 2 bên đều nhau */
-    justify-content: space-between;
-}
-
  .container {
     /* max-width: 90%; */
     max-width: 100%;
     min-width: 100%;
     /* chỉnh khoảng cách trên dưới trong "container" */
     /* margin: 45px; */
-    margin: 25px 50px 75px 100px;    
+    margin: 25px 100px 75px 100px;    
     /* margin: 16px; */
     /* position: relative; */
     /* width: 100%;
