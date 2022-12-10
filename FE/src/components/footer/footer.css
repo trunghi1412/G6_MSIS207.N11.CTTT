@@ -9,7 +9,8 @@
     
     background: black;
     height: auto; */
-    clear: both;
+    /* clear: both; */
+    font-size: 15px;
     position: absolute;
     height: 200px;
     margin-top: 6557px;

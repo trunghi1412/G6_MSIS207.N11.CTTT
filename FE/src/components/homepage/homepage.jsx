@@ -28,12 +28,7 @@ const HomePage = () => {
 
         //Chỉnh tốc độ chạy autoplay
         autoplaySpeed: 1000,
-  
-        /*Tạo thanh kiểu dấu chấm */
-        appendDots: (dots) => {
-          return <ul style={{margin: "0px"}}>{dots}</ul>
-        }
-      }
+}
 
     return (  
 

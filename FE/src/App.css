@@ -1,4 +1,4 @@
- .container {
+.container {
     /* max-width: 90%; */
     max-width: 100%;
     min-width: 100%;
@@ -37,10 +37,24 @@ input, button {
 
   /*--------btn-primary trong SlideCard.jsx-------------*/
 
+  /*------------page---------------*/
+.page {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  font-size: 0.75em;  
+}
 
   /*------------login and register---------------*/
   .login-page {
+    width: 100%;
+    height: 30%;
     display: flex;
-    margin: 128px 116px;
+    /* margin: 128px 116px; */
+    margin: 20px 0px;
     justify-content: center;   
 }
+
+
+
