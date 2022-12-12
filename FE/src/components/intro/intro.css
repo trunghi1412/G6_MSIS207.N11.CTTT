@@ -2,7 +2,8 @@
 
 .container {
     height: fit-content;
-   margin-top: 110px;
+    margin-top: 110px;
+    letter-spacing: 3px; 
 }
 
 .intro-avt {
@@ -11,28 +12,29 @@
 }
 .part {
     margin-left: 30px;
-   
+    line-height: 10px;  
+    height: 550px;
+    width: 1470px;
 }
 
 .intro-tit {
     font-size: 35px;
     font-family: Rubik Bubbles;
     margin-top: 60px;
-    
     background-color: white;
 }
 
 .quest {
+    line-height: 65px;
     font-size: 20px;
     margin-top: 20px;
     font-weight: bold;
-    color: orange;
-    
+    color: orange; 
 }
 
 .text-desc {
     font-size: 18px;
-    line-height: 20px;
+    line-height: 31px;
     margin-top: 20px;
 }
 .text-desc2{
@@ -59,5 +61,4 @@
     height: 800px;
     width: 800px;
     margin-top: 60px;
-    
 }

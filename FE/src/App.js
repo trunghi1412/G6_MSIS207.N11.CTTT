@@ -9,12 +9,14 @@ import Intro from "./components/intro/intro.jsx";
 import Blog from "./components/blog/blog.jsx";
 import "./App.css"
 import Slide from "./components/homepage/Slide";
+import ScrollToTop from "./components/ScrollToTop"
 
 
 function App() {
   return (
     <div className="page">
       <Header />   
+      <ScrollToTop/>
       <Switch>
         <Route path="/login" component={LoginPage} />
         <Route path="/cart" component={Cart} />
