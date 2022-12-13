@@ -98,15 +98,6 @@
 }
 
 .name-desc {
-    /* display: flex;
-    flex-direction: column;
-    align-items: center ;
-    justify-content: space-between;
-    margin: 50px 0px;
-    margin: 25px 100px 75px 100px;
-    background-color: black;
-    padding: 20px; */
-
     display: flex;
     align-items: center;
     background-color: #000000;
@@ -114,7 +105,6 @@
     flex-direction: column;
     font-size: 7.2px;
     justify-content: space-between;
-    /* margin: 50px 12px; */
     margin: 25px -53px 70px;
     padding: 20px;
     text-transform: capitalize;
@@ -128,9 +118,7 @@
 }
 
 .present-fig {
-    /* margin-left: 180px; */
     margin-left: 168px;
-    /* margin-right: 180px; */
     margin-right: 168px;
     padding-top: 20px;
 }
@@ -138,10 +126,9 @@
 .fig-pic {
     height: 700px;
     width: 520px;
-    /* height: 7%; */
-    margin: 5px -105px;
-    
+    margin: 5px -105px;  
 }
+
 .fig-pic:hover {
     opacity: 0.8;
     
@@ -166,6 +153,8 @@
     
 }
 .atc-btn {
+    /* width: 150px; */
+    width: 50%;
     padding: 5px 10px;
     background-color: orange;
     color: black;
@@ -174,7 +163,7 @@
 }
 .atc-btn:hover {
     color: orange;
-    background-color: black;
+    background: linear-gradient(45deg, rgba(2,0,36,1) 0%, rgba(18,18,228,1) 35%, rgba(0,212,255,1) 100%);
 }
 
 .Pre-order {
@@ -189,20 +178,26 @@
 }
 
 .one-fig-price {
-    font-size: 15px
+    font-size: 19px;
+    color: #FF7000;
+    font-style: bold;
 }
 
 .thanhtoan-part {
+   width: auto;
+   height: 200px;
    color:black;
    border-style: solid;
    border-width: 0.5px;
-   padding: 30px 30px;
+   padding: 13px 20px;
    background: rgb(169, 167, 167);
    margin: 40px;
-   border-left: 0;
-   border-top: 0;
+   margin-bottom: 90px;
+   border-left: 10px;
+   border-top: 10px;
    border-bottom: 0;
 }
+
 .icon-payment {
     font-size: 30px;
 }
@@ -213,19 +208,15 @@
 }
 
 .fig-thantoan {
+    width: auto;
+    height: 400px;
     align-items: center;
     background-color: #a9a7a7;
     display: flex;
     font-size: 15px;
     justify-content: space-between;
-    /* margin: 100px 160px; */
-    margin-left: -265px;
-    margin-right: -60px;
-    /* margin-bottom: 199px; */
-    /* cho màn hình máy tính */
-    margin-bottom: 225px;
-    text-transform: capitalize;
-
+    margin-left: -200px;
+    margin-right: -142px;
 }
 
 /* footer */

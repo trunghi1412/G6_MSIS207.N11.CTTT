@@ -39,11 +39,12 @@ input, button {
 
   /*------------page---------------*/
 .page {
-  width: 100%;
-  height: fit-content;
+  width: auto;
+  height: 150px;
+  margin-left: -90px;
+  margin-right: 62px; 
   display: flex;
   justify-content: center;
-  font-size: 0.75em;  
 }
 
   /*------------login and register---------------*/
@@ -56,5 +57,21 @@ input, button {
     justify-content: center;   
 }
 
+.cover {
+  background-color: white;
+  width: 30%;
+  /* height: 70%; */
+  height: 50%;
+  position: relative;
+  /* border-radius: 1em; */
+  border-radius: 8px;
+  box-shadow: 0 0.188em 1.550em rgb(21, 13, 13);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 200px;
+  padding: 250px 0;
+}
 
 

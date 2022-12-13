@@ -5,14 +5,14 @@
     margin-top: 6557px;
 }
 
-.follow
-.follow-name{
-    display: flex;
-    flex-direction:column;
-    padding: 50px;
-    align-items: center;
-    background-color: rgba(133, 138, 141, 0.271);
-    color: black;
+.follow-container {
+    /* width: 1668px; */
+    /* width: auto;
+    height: 15px; */
+    width: auto;
+    height:300px;
+    margin-left: -188px;
+    margin-right: -172px;
 }
 .follow-shop{
     font-weight: bold;
@@ -36,17 +36,21 @@
 
 .intro-name {
     font-weight: bolder;
-    font-size: 15px;
+    line-height: 2;
+    font-size: 19px;
+    margin-left: 29px;
     margin-right: 50px;
 }
 .intro-tat {
     font-weight: bold;
 }
 .intro-desc {
+    margin-left: 29px;
     margin-right: 50px;
-    font-size: 10px
+    font-size: 19px
 }
 .phone-contact {
+    font-size: 19px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;

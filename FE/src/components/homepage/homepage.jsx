@@ -24,14 +24,13 @@ const HomePage = () => {
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
-        autoplay: true,
+        // autoplay: true,
 
         //Chỉnh tốc độ chạy autoplay
-        autoplaySpeed: 1000,
+        // autoplaySpeed: 1000,
 }
 
     return (  
-
     <>
         {/*Setup "react-Slick (kéo qua)*/}
         <Slider {...settings}>

@@ -65,19 +65,9 @@ technology and a strictly supervised production process.</p>
     <p className='pic-desc'>Our shop's purpose are: </p>   
     {
     Introimg3.map(img => (<img className='part3-pic' src={img} alt=''></img>))
-  }
-
- 
-    
+  }    
     </div>
-
-
-
 </div>
-    
-
-
   )
 }
-
 export default Intro

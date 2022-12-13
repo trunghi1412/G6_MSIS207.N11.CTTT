@@ -4,7 +4,7 @@ import Header from "./components/header/Header.jsx";
 import Cart from "./components/cart/cart.jsx";
 /* import HomePage from "./components/homepage/homepage.jsx"; */
 import Register from "./components/register/register.jsx";
-import Footer from "./components/footer/footer.jsx";
+import Footer from "./components/footer/footer.jsx"; 
 import Intro from "./components/intro/intro.jsx";
 import Blog from "./components/blog/blog.jsx";
 import "./App.css"
@@ -15,10 +15,10 @@ import ScrollToTop from "./components/ScrollToTop"
 function App() {
   return (
     <div className="page">
-      <Header />   
+      <Header />  
       <ScrollToTop/>
       <Switch>
-        <Route path="/login" component={LoginPage} />
+        <Route path="/login" component={LoginPage} /> 
         <Route path="/cart" component={Cart} />
         <Route path="/intro" component={Intro} />
         <Route path="/blog" component={Blog} />
@@ -29,6 +29,7 @@ function App() {
         
       </Switch>
       <Footer />
+
      
     </div>
   );

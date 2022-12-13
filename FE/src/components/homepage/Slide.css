@@ -36,17 +36,16 @@
 }
 
 .homeSlide .box .left{
-    /* width: 70%;   */
-    width: 100vh;  
+    width: auto;  
 }
+
 .homeSlide .box .right{
-    width: auto;    
+    width: 70%;    
 }
 
 .homeSlide .box img{
-    width: 93%;
-    margin: 43px;   
-    height: 75%;    
+    width: 440px;
+    height: 430px;
 }
 
 .left h1{
@@ -54,14 +53,13 @@
     font-size: 35px;
     font-family: 'Roboto', sans-serif;
     /* margin: 95px 35px 59px 16px;  */
-    margin: 50px 35px 59px 16px; 
-
+    margin: 50px 18px 49px 27px;
     border: 10px solid #15b244;
 }
 
 .left p{
     text-align: left;
-    font-size: 35px;
+    font-size: 30px;
     font-family: 'Roboto', sans-serif;
     margin: 15px 35px 35px 15px; 
     line-height: 2;
