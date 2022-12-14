@@ -7,10 +7,13 @@
     
 }
 
-.log-name{
+.log-name-1{
+    margin-left: -9px;
     font-size: 30px;
     font-weight: bold;
+    margin-bottom: 20px;
 }
+
 .login-alt {
     width: 80%;
     height: 20px;

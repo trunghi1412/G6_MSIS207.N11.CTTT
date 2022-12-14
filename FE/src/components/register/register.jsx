@@ -27,7 +27,7 @@ const Register = () => {
   return (
     <div className="login-page">
     <div className="cover">
-      <div className="log-name">Register</div>
+      <div className="log-name-1">Register</div>
 
       <form onSubmit={handleRegister}>
         <input

@@ -49,10 +49,8 @@ input, button {
 
   /*------------login and register---------------*/
   .login-page {
-    width: 100%;
-    height: 30%;
+    width: 1550px;
     display: flex;
-    /* margin: 128px 116px; */
     margin: 20px 0px;
     justify-content: center;   
 }
@@ -60,10 +58,9 @@ input, button {
 .cover {
   background-color: white;
   width: 30%;
-  /* height: 70%; */
   height: 50%;
+  margin-left: 200px;
   position: relative;
-  /* border-radius: 1em; */
   border-radius: 8px;
   box-shadow: 0 0.188em 1.550em rgb(21, 13, 13);
   display: flex;

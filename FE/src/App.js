@@ -18,13 +18,13 @@ function App() {
       <Header />  
       <ScrollToTop/>
       <Switch>
-        <Route path="/login" component={LoginPage} /> 
+        <Route path="/login" component={LoginPage} />  
         <Route path="/cart" component={Cart} />
         <Route path="/intro" component={Intro} />
         <Route path="/blog" component={Blog} />
 
-        <Route path="/register" component={Register} />
-         {/* <Route path="/" component={HomePage} /> */}
+       <Route path="/register" component={Register} /> 
+         {/* <Route path="/" component={HomePage} */ }
          <Route path="/" component={Slide} />
         
       </Switch>
