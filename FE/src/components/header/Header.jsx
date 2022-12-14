@@ -14,10 +14,8 @@ const Header = () => {
         <nav className="navbar">
         <NavLink to='/homepage' onClick={this} className='home-btn'> Home </NavLink>
         <NavLink to='/intro' onClick={this} className='intro-btn'> Introduction </NavLink>
-          <NavLink to='/cart' onClick={this} className='product-btn'> Product </NavLink>
-          
+          <NavLink to='/cart' onClick={this} className='product-btn'> Product </NavLink>       
           <NavLink to='/blog' onClick={this} className='blog-btn'> Blog </NavLink>
-          <a href="contact">Contact</a>
         </nav>
 
         <div className='icons'>

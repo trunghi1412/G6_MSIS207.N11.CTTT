@@ -3,10 +3,7 @@
     height: 150px;
     margin-left: 294px;
     margin-right: 202px;
-    height: fit-content;
     display: block;
-    /* min-height: 85vh; */
-    /* flex-direction: column; */
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
@@ -42,8 +39,8 @@
     text-align: center;
     line-height: 1.5;
     font-weight: bolder;
-    font-size: 20px;
     font-style: normal;
+    font-size: 20px;
     color: rgb(222, 133, 24);
 }
 .quantity,

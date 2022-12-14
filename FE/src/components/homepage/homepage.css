@@ -33,13 +33,14 @@
     
 
 .mecha {
+    width: 1000px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     margin-top: 200px;
-    margin-right: 248px;
-    margin-left: 190px;
+    margin-right: 140px;
+    margin-left: 63px;
 }
 .mecha-fig {
     height: 500px;
@@ -58,6 +59,8 @@
 }
 
 .type-info {
+    margin-left: 24px;
+    width: 570px;
     font-weight: 400;
     font-size: 15px;
 }
@@ -76,13 +79,15 @@
     transform: scale(1.25);
 }
 .anime {
+    width: 1000px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     margin-top: 200px;
     margin-right: 140px;
-    margin-left: 140px;
+    /* margin-left: 140px; */
+    margin-left: -18px;
 }
 .anime-description {
     line-height: 40px;
@@ -150,11 +155,18 @@
 }
 .one-fig-name {
     font-size: 17px;
+    text-align: center;
+    line-height: 1.9;
+    font-weight: bolder;
+    font-style: normal;
+    margin-left: -50px;
+
     
 }
 .atc-btn {
-    /* width: 150px; */
-    width: 50%;
+    width: 152px;
+    height: 82px;
+    margin-left: 15px;
     padding: 5px 10px;
     background-color: orange;
     color: black;
@@ -178,9 +190,12 @@
 }
 
 .one-fig-price {
+    text-align: center;
     font-size: 19px;
     color: #FF7000;
     font-style: bold;
+    line-height: 1.9;
+    margin-left: -50px;
 }
 
 .thanhtoan-part {

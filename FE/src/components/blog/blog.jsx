@@ -24,13 +24,13 @@ const Blog = () => {
     Blogimg1.map(img => (<img className='img1-news' src={img} alt=''></img>))
     }
     <div className='news'>
-        <p className='news-tit'>How to effortlessly achieve a real figure. How to effortlessly achieve a real figure.</p>
+        <p className='news-tit'>How to effortlessly achieve a real figure.</p>
 
         <p className='news-desc'>WARNING: ONLY RAIL WATER, BIRD SHOCK, AND MARLEY'S MILITARY TITANS FLOW FOR FREE IN THIS 
     WORLD; MONEY DOESN'T FLOOR FROM HEAVEN. The information that follows should only be read for share-related 
     information, not for investment advice. IT IS ENTIRELY UP TO YOU WHETHER TO VOTE OR JOIN. IF YES, JAPAN IS NOT RESPONSIBLE FOR THE OPPORTUNITIES + RISKS OF ASSETS FIGURE.</p>
 
-        <p className='post-date'>Post by : Hirito Shop &#183; Wednesday-30st-2022 </p>
+        <p className='post-date'>Post by : Hirito Shop &#183; Wednesday-23-11-2022 </p>
     </div>
        
     </div>
@@ -47,7 +47,7 @@ const Blog = () => {
         He comes with three face plates: a neutral expression, a combat-
         focused expression, and a smiley expression that some claim makes him look like the devil.</p>
 
-        <p className='post-date'>Post by : Hirito Shop &#183; Tuesday-29th-2022 </p>
+        <p className='post-date'>Post by : Hirito Shop &#183; Tuesday-29-11-2022 </p>
     </div>
        
     </div>
@@ -65,7 +65,7 @@ const Blog = () => {
         and an additional lower body for the game. She also has an "Indomitable" supporter with her. Remember 
         to include her in your collection!</p>
 
-        <p className='post-date'>Post by : Hirito Shop &#183; Monday-28th-2022 </p>
+        <p className='post-date'>Post by : Hirito Shop &#183; Monday-28-11-2022 </p>
     </div>
        
     </div>
@@ -83,7 +83,7 @@ const Blog = () => {
         to add a certain baby to your collection  Now!! Let's go : 3 Chika Fujiwara 
         will be today's character :3 !! Shuchiin Academy's student council secretary has aired on the cutest Nendoroid xD version of the world.</p>
 
-        <p className='post-date'>Post by : Hirito Shop &#183; Sunday-27th-2022 </p>
+        <p className='post-date'>Post by : Hirito Shop &#183; Sunday-27-11-2022 </p>
     </div>
        
     </div>
@@ -99,7 +99,7 @@ const Blog = () => {
         He comes with three face plates: a neutral expression, a combat-
         focused expression, and a smiley expression that some claim makes him look like the devil.</p>
 
-        <p className='post-date'>Post by : Hirito Shop &#183; Tuesday-29th-2022 </p>
+        <p className='post-date'>Post by : Hirito Shop &#183; Tuesday-29-11-2022 </p>
     </div>
        
     </div>
@@ -116,7 +116,7 @@ const Blog = () => {
         He comes with three face plates: a neutral expression, a combat-
         focused expression, and a smiley expression that some claim makes him look like the devil.</p>
 
-        <p className='post-date'>Post by : Hirito Shop &#183; Tuesday-29th-2022 </p>
+        <p className='post-date'>Post by : Hirito Shop &#183; Tuesday-29-11-2022 </p>
     </div>
        
     </div>
@@ -133,7 +133,7 @@ const Blog = () => {
         He comes with three face plates: a neutral expression, a combat-
         focused expression, and a smiley expression that some claim makes him look like the devil.</p>
 
-        <p className='post-date'>Post by : Hirito Shop &#183; Tuesday-29th-2022 </p>
+        <p className='post-date'>Post by : Hirito Shop &#183; Tuesday-29-11-2022 </p>
     </div>
        
     </div>
@@ -150,14 +150,12 @@ const Blog = () => {
         He comes with three face plates: a neutral expression, a combat-
         focused expression, and a smiley expression that some claim makes him look like the devil.</p>
 
-        <p className='post-date'>Post by : Hirito Shop &#183; Tuesday-29th-2022 </p>
+        <p className='post-date'>Post by : Hirito Shop &#183; Tuesday-29-11-2022 </p>
     </div>
        
     </div>
 
     </div>       
-    
-
         </div>
     )
 }

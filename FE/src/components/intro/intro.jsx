@@ -38,7 +38,7 @@ const Intro = () => {
     Introimg2.map(img => (<img className='part2-pic' src={img} alt=''></img>))
   }
 
-<p className='pic-desc'>Picture 2: Both pictures above here are Japan Figure Anime</p>
+<p className='pic-desc-1'>Picture 2: Both pictures above here are Japan Figure Anime</p>
 <p className='text-desc'> The finished figure products are very soulful of the original 
 characters, with sharp details, vivid colors, and well packaged, thanks to Japanese 
 technology and a strictly supervised production process.</p>
@@ -62,7 +62,7 @@ technology and a strictly supervised production process.</p>
         <li>Hunt for figures from rare to extremely rare</li>
     </ul>
     
-    <p className='pic-desc'>Our shop's purpose are: </p>   
+    <p className='pic-desc-2'>Our shop's purpose are: </p>   
     {
     Introimg3.map(img => (<img className='part3-pic' src={img} alt=''></img>))
   }    

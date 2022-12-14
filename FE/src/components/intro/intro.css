@@ -53,19 +53,44 @@
    color: rgb(213, 168, 20);
 }
 .pic-desc {
+    width: 1500px;
+    margin-left: 150px;
     font-size: 18px;
-    margin: 20px 100px;
+    margin: 25px 476px;
+    color: rgb(112, 123, 223);
+}
+
+.pic-desc-1{
+    width: 1500px;
+    margin-left: 150px;
+    font-size: 18px;
+    margin: 25px 383px;
+    color: rgb(112, 123, 223);
+}
+
+.pic-desc-2{
+    width: 1500px;
+    margin-left: 150px;
+    font-size: 18px;
+    margin: 25px 522px;
     color: rgb(112, 123, 223);
 }
 
 .part1-pic {
     height: 500px;
-    width: 700px;
-    margin-top: 50px ;
+    width: 750px;
+    margin-top: 50px;
+    margin-left: 355px;
 }
 
 .part2-pic {
     height: 800px;
-    width: 800px;
-    margin-top: 60px;
+    width: 750px;
+    margin-top: 50px;
+    margin-left: 355px;
+}
+
+.part3-pic {
+    margin-top: 50px;
+    margin-left: 470px;
 }
