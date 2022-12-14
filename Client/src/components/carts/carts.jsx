@@ -2,7 +2,7 @@ import RemoveOutlinedIcon from '@mui/icons-material/RemoveOutlined';
 import AddOutlinedIcon from '@mui/icons-material/AddOutlined';
 import styled from "styled-components";
 import Announcement from '../Assest/Announcement';
-import Header from '../Header';
+import Header from '../header/Header';
 import { NavLink } from 'react-router-dom'
 
 

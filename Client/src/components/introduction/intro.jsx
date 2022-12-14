@@ -5,7 +5,7 @@ import imgIntro from './introMain'
 // import Introimg2 from './introImg2'
 // import Introimg3 from './introImg3'
 import Footer from '../Assest/Footer'
-import Header from '../Header'
+import Header from '../header/Header'
 import Announcement from '../Assest/Announcement'
 import styled from 'styled-components'
 import StarIcon from '@mui/icons-material/Star';

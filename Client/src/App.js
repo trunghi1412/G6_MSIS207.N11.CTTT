@@ -1,9 +1,9 @@
-import LoginPage from "./components/login";
+import LoginPage from "./components/login/login";
 import { Switch, Route } from "react-router-dom";
 // import Header from "./components/Header";
 import Cart from "./components/cart/cart";
-import HomePage from "./components/homepage";
-import Register from "./components/register";
+import HomePage from "./components/homepage/homepage";
+import Register from "./components/register/register";
 // import Footer from "./components/footer";
 import Intro from "./components/introduction/intro";
 import Blog from "./components/blog/blog";

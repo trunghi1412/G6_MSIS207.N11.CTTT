@@ -7,7 +7,7 @@ import Blogimg4 from './blogImg4'
 import Blogimg5 from './blogImg5'
 import './blog.css'
 import styled from 'styled-components'
-import Header from '../Header'
+import Header from '../header/Header'
 import Announcement from '../Assest/Announcement'
 import Footer from '../Assest/Footer'
 

@@ -2,7 +2,7 @@ import React from 'react'
 // import { NavLink } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import './cart.css'
-import Header from "../Header"
+import Header from "../header/Header"
 import Announcement from '../Assest/Announcement'
 
 const Cart = () => {

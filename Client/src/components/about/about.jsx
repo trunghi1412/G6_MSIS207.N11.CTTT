@@ -1,7 +1,7 @@
 import React from 'react'
 import Announcement from '../Assest/Announcement'
 import Footer from '../Assest/Footer'
-import Header from '../Header'
+import Header from '../header/Header'
 import SliderforAbout from './SliderforAbout'
 
 const about = () => {
