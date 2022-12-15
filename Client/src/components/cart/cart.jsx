@@ -5,9 +5,26 @@ import './cart.css'
 import Header from "../header/Header"
 import Announcement from '../Assest/Announcement'
 
-const Cart = () => {
+const Cart = (item) => {
   const [products, setProducts] = useState([]);
   const [page, setPage] = useState(1);
+  const [cart, setCart] = useState([]);
+
+  const handleClick = (item) => {
+    if (cart.indexOf(item) !== -1) return;
+    setCart([...cart, item]);
+    alert('Added to cart.')
+  }
+
+  const handleChange = (item, d) => {
+    const ind = cart.indexOf(item);
+    const arr = cart;
+    arr[ind].amount += d;
+
+    if (arr[ind].amount === 0) arr[ind].amount = 1;
+    setCart([...arr]);
+  };
+
   useEffect(() => {
     fetch('http://localhost:2000/api/getproduct')
     .then(res => res.json())
@@ -15,14 +32,13 @@ const Cart = () => {
       setProducts(res)
     })
   },[]) 
-
-  console.log(products)
+    
     return (
       <div>
-      <Header/>
       <Announcement/>
+      <Header/>
         <div className='shopping-cart'>
-          <p className='product-p-title'>HIRITO'S FIGURES</p>
+          <p className='product-p-title'>GROUP6.FIG</p>
           <ul className='cart__list' >
            {
             products.map((product, index) => {
@@ -33,10 +49,10 @@ const Cart = () => {
                       <p className='p-name'>
                         {product.name}
                       </p>
-                      <p className='price'>Price: {product.price}</p>
+                      <p className='price'>Price: {product.price} VND</p>
                       <p className='quantity'>Quantity: {product.quantity}</p>
-                      <div className='bt-product-page'>
-                        <button className='add-tc'>Add to Cart</button>
+                        <div className='bt-product-page'>
+                        <button className='add-tc' onClick={() => handleClick(product)}>Add to Cart</button>
                         <button className='det-tc'>More Detail</button>
                       </div>   
                 </div>
@@ -52,7 +68,7 @@ const Cart = () => {
               <button onClick={() => setPage(4)} className='num-page'>4</button>
  
             </div>
-        </div>
+          </div> 
         </div>
     )
 }

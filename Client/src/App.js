@@ -11,8 +11,6 @@ import about from "./components/about/about";
 import carts from "./components/carts/carts";
 import ScrollToTop from "./components/CsrollToTop";
 
-
-
 function App() {
   return (
     <div>     

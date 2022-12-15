@@ -1,6 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-// import "./header.css"
+// import "../header/header.css"
 // import { FaSearch, FaShoppingCart, FaUser } from 'react-icons/fa'
 import styled from 'styled-components'
 import Search from '@mui/icons-material/Search';
@@ -11,10 +11,12 @@ import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 
 const Container = styled.div`
     height: 60px;
+    width: 1499px;
     background-color: white;
 `;
 
 const Wrapper = styled.div`
+    margin-bottom: 10px;
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
@@ -83,42 +85,11 @@ const Person = styled.button`
   margin: 0 10px 0 5px;
 `;
 
-const Header = () => {
+const Header = ({ }) => {
 
   return (
-    // <div>
-    //   <div className='header'>
-
-    //     <div className='logo'> <i>G6-FIG</i> </div>
-
-    //     <nav className="navbar">
-    //       <NavLink to='/homepage' onClick={this} className='home-btn'> Home </NavLink>
-    //       <NavLink to='/intro' onClick={this} className='intro-btn'> Introduction </NavLink>
-    //       <NavLink to='/cart' onClick={this} className='product-btn'> Product </NavLink>
-    //       <NavLink to='/blog' onClick={this} className='blog-btn'> Blog </NavLink>
-    //       {/* <NavLink to='/carts' onclick={this} className='about-btn'>Cart</NavLink> */}
-    //       <NavLink to='/about' onclick={this} className='about-btn'>About</NavLink>
-    //     </nav>
-
-    //     <div className='icons'>
-
-    //       <FaSearch className='icon-search' id='search-button' />
-    //       <NavLink to='/carts' onclick={this} className='about-btn'><FaShoppingCart className='icon-cart' id='cart-button' /></NavLink>
-    //       {/* <FaShoppingCart className='icon-cart' id='cart-button' /> */}
-
-    //       <NavLink to='/login' onClick={this} ><FaUser className='icon-user' id='login-button' /></NavLink>
-    //     </div>
-
-    //     <form action="" className='search-something'>
-    //       {/* <input type="search" id='search-box' placeholder='search figure...'/> */}
-
-    //     </form>
-
-
-    //   </div>
-
-    // </div>
     <div>
+      <header>
       <Container>
             <Wrapper>
                 <Left>
@@ -151,13 +122,14 @@ const Header = () => {
                   <Person>
                     <NavLink to='/login' onClick={this} ><AccountCircleIcon id='login-button' style={{color: "white", fontSize: 30, cursor: "pointer", padding: 1,}}/></NavLink>
                   </Person>
-                  <Person>
-                    <NavLink to='/carts' onclick={this} className='about-btn'><ShoppingCartIcon id='cart-button' style={{color: "white", fontSize: 30, cursor: "pointer", padding: 1,}}/></NavLink>
-                  </Person>
+                  <Person>            
+                     <NavLink to='/carts' onclick={this} className='about-btn'><ShoppingCartIcon id='cart-button' style={{color: "white", fontSize: 30, cursor: "pointer", padding: 1,}}/></NavLink>                                                      
+                  </Person> 
+
                 </Right>
             </Wrapper>
-
         </Container>
+        </header>
     </div>
 
 

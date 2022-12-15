@@ -10,7 +10,6 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import PhoneAndroidIcon from '@mui/icons-material/PhoneAndroid';
 import { InforAbout } from './DataForAbout';
 
-
 const Container = styled.div`
     width: 100%;
     height: 100vh;

@@ -90,13 +90,13 @@ const Text = styled.p`
 
 const Intro = () => {
   return (
-<div>      
+<div> 
+    <Announcement/>     
     <Header/>
-    <Announcement/>
     <Container>
       <Wrapper>
         {imgIntro.map(img => (<img className='intro-avt' src={img} alt=''></img>))}
-        <Title><b>Introduction About Hirito Figure Shop</b></Title>
+        <Title><b>Introduction About GROUP6.FIG Shop</b></Title>
         <TopText>1. What Is Figure ?</TopText>
         <Summary>Is It A Model, A Statue, Or Any Other Name For 3D Artifacts Held In One's Hand That Simulate Characters In Drawings, 
           Movies, Stories, Or Games... Figures Are Usually People, But They Can Also Be Animals, Plants, Monsters, Elves, Gods, 
