@@ -27,8 +27,8 @@ const Register = () => {
 
   return (
     <div>
-    <Header />
     <Announcement/>
+    <Header />
     <div className="cover-1">
       <div className="log-name">Register</div>
 

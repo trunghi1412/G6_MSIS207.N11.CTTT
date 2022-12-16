@@ -40,8 +40,8 @@ const LoginPage = () => {
 
   return (
     <div>
-    <Header />
     <Announcement/>
+    <Header />
     <div className="cover">
       <div className="log-name">Login</div>
 

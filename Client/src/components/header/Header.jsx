@@ -4,10 +4,11 @@ import { NavLink } from 'react-router-dom'
 // import { FaSearch, FaShoppingCart, FaUser } from 'react-icons/fa'
 import styled from 'styled-components'
 import Search from '@mui/icons-material/Search';
-// import { Badge } from '@mui/material';
+import { Badge } from '@mui/material';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart'; 
 // import { width } from '@mui/system';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import { useCart } from 'react-use-cart'
 
 const Container = styled.div`
     height: 60px;
@@ -85,7 +86,8 @@ const Person = styled.button`
   margin: 0 10px 0 5px;
 `;
 
-const Header = ({ }) => {
+const Header = () => {
+  const { totalItems } = useCart(); 
 
   return (
     <div>
@@ -122,8 +124,14 @@ const Header = ({ }) => {
                   <Person>
                     <NavLink to='/login' onClick={this} ><AccountCircleIcon id='login-button' style={{color: "white", fontSize: 30, cursor: "pointer", padding: 1,}}/></NavLink>
                   </Person>
+
+                  {/* Porcess full function for cart (add, remove, decrease, increase item) */}
                   <Person>            
-                     <NavLink to='/carts' onclick={this} className='about-btn'><ShoppingCartIcon id='cart-button' style={{color: "white", fontSize: 30, cursor: "pointer", padding: 1,}}/></NavLink>                                                      
+                    <NavLink to='/carts' onclick={this} className='about-btn'>
+                      <Badge badgeContent={totalItems} color="secondary" >
+                        <ShoppingCartIcon id='cart-button' style={{color: "white", fontSize: 30, cursor: "pointer", padding: 1,}}/>
+                      </Badge>
+                    </NavLink>                                                      
                   </Person> 
 
                 </Right>

@@ -4,34 +4,23 @@ import { useState, useEffect } from 'react'
 import './cart.css'
 import Header from "../header/Header"
 import Announcement from '../Assest/Announcement'
+import { useCart } from "react-use-cart";
 
-const Cart = (item) => {
+const Cart = () => {
+  const { addItem } = useCart();
   const [products, setProducts] = useState([]);
   const [page, setPage] = useState(1);
-  const [cart, setCart] = useState([]);
 
-  const handleClick = (item) => {
-    if (cart.indexOf(item) !== -1) return;
-    setCart([...cart, item]);
-    alert('Added to cart.')
-  }
-
-  const handleChange = (item, d) => {
-    const ind = cart.indexOf(item);
-    const arr = cart;
-    arr[ind].amount += d;
-
-    if (arr[ind].amount === 0) arr[ind].amount = 1;
-    setCart([...arr]);
-  };
 
   useEffect(() => {
     fetch('http://localhost:2000/api/getproduct')
     .then(res => res.json())
     .then(res => {
-      setProducts(res)
+      setProducts(res.products)
     })
   },[]) 
+
+  
     
     return (
       <div>
@@ -52,7 +41,7 @@ const Cart = (item) => {
                       <p className='price'>Price: {product.price} VND</p>
                       <p className='quantity'>Quantity: {product.quantity}</p>
                         <div className='bt-product-page'>
-                        <button className='add-tc' onClick={() => handleClick(product)}>Add to Cart</button>
+                        <button className='add-tc' onClick={()=>{addItem(product)}}>Add to Cart</button>
                         <button className='det-tc'>More Detail</button>
                       </div>   
                 </div>

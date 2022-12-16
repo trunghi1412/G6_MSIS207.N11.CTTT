@@ -10,10 +10,11 @@ import Blog from "./components/blog/blog";
 import about from "./components/about/about";
 import carts from "./components/carts/carts";
 import ScrollToTop from "./components/CsrollToTop";
+import {CartProvider} from 'react-use-cart'
 
 function App() {
   return (
-    <div>     
+    <CartProvider>     
       <ScrollToTop/>
       <Switch>
         <Route path="/login" component={LoginPage} />
@@ -26,7 +27,7 @@ function App() {
         <Route path="/" component={HomePage} />
       </Switch>
       
-    </div>
+    </CartProvider>
   );
 }
 
