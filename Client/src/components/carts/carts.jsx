@@ -20,7 +20,9 @@ const Carts = () => {
         <>
         <Announcement/>
         <Header/>
-        <h5 className="text-center" >Cart is Empty </h5>
+        <h5 className="text-center" style={{padding: "139px 569px 100px 749px",fontSize: "45px"}}>Your Cart </h5>
+        {items.length === 0 ? <p style={{padding: "0px 569px 100px 693px",fontSize: "45px"}}>No items in cart</p> : null}
+        <h2 style={{padding: "11px 569px 100px 676px",fontSize: "45px"}}>Total Price: {cartTotal} VND</h2>
         </>
     )
 
