@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import { NavLink, useHistory } from "react-router-dom";
-import Header from "../header/Header";
-import Announcement from '../Assest/Announcement'
 import "./login.css";
 let dataUser = {
   name: String,
@@ -40,8 +38,6 @@ const LoginPage = () => {
 
   return (
     <div>
-    <Announcement/>
-    <Header />
     <div className="cover">
       <div className="log-name">Login</div>
 

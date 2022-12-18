@@ -72,6 +72,7 @@ const InforContainer = styled.div`
 
 const Name = styled.h1`
     font-size: 55px;
+    font-family: 'Times New Roman', Times, serif;
 `;
 
 const Contact = styled.div`

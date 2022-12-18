@@ -29,8 +29,8 @@ const Blog = () => {
 
     return (
     <div>
-        <Announcement/>
         <Header/>
+        <Announcement/>
         <Container>
             <Wrapper>
             { Blogimg.map(img => (<img style={{width: "100%",}} src={img} alt=''></img>))}

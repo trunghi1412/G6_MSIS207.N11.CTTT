@@ -2,8 +2,6 @@ import React from "react";
 import "./register.css";
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
-import Header from "../header/Header";
-import Announcement from '../Assest/Announcement'
 
 const Register = () => {
   const [name, setName] = useState("");
@@ -27,8 +25,6 @@ const Register = () => {
 
   return (
     <div>
-    <Announcement/>
-    <Header />
     <div className="cover-1">
       <div className="log-name">Register</div>
 

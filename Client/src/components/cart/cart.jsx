@@ -24,10 +24,10 @@ const Cart = () => {
     
     return (
       <div>
-      <Announcement/>
       <Header/>
+      <Announcement/>
         <div className='shopping-cart'>
-          <p className='product-p-title'>GROUP6.FIG</p>
+          <p className='product-p-title'>ITEMS OF GROUP6.FIG</p>
           <ul className='cart__list' >
            {
             products.map((product, index) => {

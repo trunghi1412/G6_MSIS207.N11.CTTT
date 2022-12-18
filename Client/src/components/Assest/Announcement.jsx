@@ -8,14 +8,16 @@ const Container = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 14px;
+    font-size: 25px;
     font-weight: 1000;
 `;
 
 const Announcement = () => {
   return (
     <Container>
+     <div className='title'>
         - GROUP6.FIG -
+      </div>
     </Container>
     
   )

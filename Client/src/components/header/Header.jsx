@@ -122,14 +122,14 @@ const Header = () => {
                 </Center>
                 <Right>
                   <Person>
-                    <NavLink to='/login' onClick={this} ><AccountCircleIcon id='login-button' style={{color: "white", fontSize: 30, cursor: "pointer", padding: 1,}}/></NavLink>
+                    <NavLink to='/login' onClick={this} ><AccountCircleIcon id='login-button' style={{color: "white", fontSize: 25, cursor: "pointer", padding: 0, marginLeft: "1px", marginTop: "1px",}}/></NavLink>
                   </Person>
 
                   {/* Porcess full function for cart (add, remove, decrease, increase item) */}
                   <Person>            
                     <NavLink to='/carts' onclick={this} className='about-btn'>
                       <Badge badgeContent={totalItems} color="secondary" >
-                        <ShoppingCartIcon id='cart-button' style={{color: "white", fontSize: 30, cursor: "pointer", padding: 1,}}/>
+                        <ShoppingCartIcon id='cart-button' style={{color: "white", fontSize: 30, cursor: "pointer", padding: "1px",}}/>
                       </Badge>
                     </NavLink>                                                      
                   </Person> 
