@@ -38,7 +38,7 @@ const Cart = () => {
                       <p className='p-name'>
                         {product.name}
                       </p>
-                      <p className='price'>Price: {product.price} VND</p>
+                      <p className='price'>Price: {product.price.toLocaleString('en-US')} VNĐ</p>
                       <p className='quantity'>Quantity: {product.quantity}</p>
                         <div className='bt-product-page'>
                         <button className='add-tc' onClick={()=>{addItem(product)}}>Add to Cart</button>

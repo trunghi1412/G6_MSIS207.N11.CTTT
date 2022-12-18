@@ -59,7 +59,7 @@ const Carts = () => {
                             <img src={item.image} className="im1" alt=""></img>
                         </td>
                         <td className="content" style={{padding: "0px 0px 45px 42px", fontSize: "25px", lineHeight: "1.5", textAlign: "left"}}>{item.name}</td>
-                        <td className="content" style={{padding: "0px 0px 45px 73px", fontSize: "25px", lineHeight: "1.5", textAlign: "left"}}>{item.price}</td>
+                        <td className="content" style={{padding: "0px 0px 45px 73px", fontSize: "25px", lineHeight: "1.5", textAlign: "left"}}>{item.price.toLocaleString('en-US')}VNĐ</td>
                         <td className="content" style={{padding: "0px 0px 45px 245px", fontSize: "25px", lineHeight: "1.5", textAlign: "left"}}>{item.quantity}</td>
                         <td className="">
                             <button style={{border:"5px solid pink", padding: "1px 12px 1px 15px"}} className="btn-subtract btn btn-light ms-2" 
@@ -85,7 +85,7 @@ const Carts = () => {
             <br/>
             <div className="col-auto ms-auto">
             <h3>
-                Total Price: {cartTotal} VND
+                Total Price: {cartTotal.toLocaleString('en-US')} VNĐ
             </h3>
             </div>
              <div className="col-auto ms-auto">
