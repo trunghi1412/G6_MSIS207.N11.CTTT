@@ -99,8 +99,7 @@ const Header = () => {
                     <Languge>
                         <i>Welcome</i>
                     </Languge>
-                    <SearchContainer>
-                        
+                    <SearchContainer>                        
                         <Search style={{color: "white", fontSize: 30, cursor: "pointer"}}/>
                     </SearchContainer>
                 </Left>

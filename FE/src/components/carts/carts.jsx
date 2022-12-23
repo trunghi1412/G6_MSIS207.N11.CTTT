@@ -4,6 +4,8 @@ import Header from "../header/Header"
 import Announcement from '../Assest/Announcement'
 import { useCart } from 'react-use-cart'
 import { NavLink } from 'react-router-dom'
+import Footer from '../Assest/Footer'
+
 
 const Carts = () => {
     const {	
@@ -91,16 +93,16 @@ const Carts = () => {
             </div>
              <div className="col-auto ms-auto">
                 <h4>
-                <button style={{border:"10px solid #4B56D2", marginLeft:"770px", fontSize: "25px", marginTop: "-10px", marginBottom: "19px" }} className="clear-btn btn btn-warning m-2" onClick={() => emptyCart()}>Clear Cart</button>
-
+                    {/* <button style={{border:"1px solid black", borderRadius: "5px",backgroundColor:"white" , marginLeft:"770px",padding: "5px 22px",fontSize: "25px", marginTop: "-10px", marginBottom: "19px"}} className="checkout-btn" onClick={() => emptyCart()}>Check Out</button> */}
+                    <button style={{border:"1px solid black", borderRadius: "5px",backgroundColor:"white" , marginLeft:"692px",padding: "5px 22px", fontSize: "25px", marginTop: "-10px", marginBottom: "19px" }} className="clear-btn btn btn-warning m-2" onClick={() => emptyCart()}>Clear Cart</button>        
                 </h4>
-
                 <>
-                    <NavLink to='/cart' onClick={this} style={{backgroundColor:"#FCDDB0",border:"10px solid #FD8A8A", marginLeft: "706px",padding: "5px 22px",fontSize: "25px", marginTop: "-10px", marginBottom: "19px"}} >Continue Shopping</NavLink>
-                </>
+                    <NavLink to='/cart' onClick={this} style={{textDecoration: "none", backgroundColor:"white",border:"1px solid black",borderRadius: "5px", marginLeft: "637px",padding: "5px 22px",fontSize: "25px", marginTop: "-10px", marginBottom: "100px", color: " black"}} >Continue Shopping</NavLink>
+                </> 
             </div> 
         </div>
         </section>
+        <Footer/>
     </>
   )
 }
