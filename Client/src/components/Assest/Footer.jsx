@@ -10,6 +10,7 @@ import RoomOutlinedIcon from '@mui/icons-material/RoomOutlined';
 
   
   const Container = styled.div`
+    margin-top: 20px;
     display: flex;
     background-color: #f4f3ee;
   `;

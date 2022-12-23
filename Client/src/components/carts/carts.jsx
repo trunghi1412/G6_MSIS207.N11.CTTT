@@ -3,6 +3,9 @@ import "./carts.css"
 import Header from "../header/Header"
 import Announcement from '../Assest/Announcement'
 import { useCart } from 'react-use-cart'
+import { NavLink } from 'react-router-dom'
+import Footer from '../Assest/Footer'
+
 
 const Carts = () => {
     const {	
@@ -18,18 +21,18 @@ const Carts = () => {
     if (isEmpty) 
     return(
         <>
-        <Announcement/>
         <Header/>
-        <h5 className="text-center" style={{padding: "139px 569px 100px 749px",fontSize: "45px"}}>Your Cart </h5>
-        {items.length === 0 ? <p style={{padding: "0px 569px 100px 693px",fontSize: "45px"}}>No items in cart</p> : null}
-        <h2 style={{padding: "11px 569px 100px 676px",fontSize: "45px"}}>Total Price: {cartTotal} VND</h2>
+        <Announcement/>
+        <h5 className="text-center" style={{padding: "139px 569px 100px 674px",fontSize: "35px"}}>Your Cart </h5>
+        {items.length === 0 ? <p style={{padding: "0px 569px 100px 636px",fontSize: "35px"}}>No items in cart</p> : null}
+        <h2 style={{padding: "1px 535px 100px 618px",fontSize: "35px"}}>Total Price: {cartTotal} VND</h2>
         </>
     )
 
   return (
     <>
-        <Announcement/>
         <Header/>
+        <Announcement/>
         <section className="py-4 container">
             <div className="row justify-content-center">
             <div className="col-12">
@@ -90,11 +93,16 @@ const Carts = () => {
             </div>
              <div className="col-auto ms-auto">
                 <h4>
-                <button style={{border:"10px solid #4B56D2", marginLeft:"770px", fontSize: "25px", marginTop: "-10px", marginBottom: "19px" }} className="clear-btn btn btn-warning m-2" onClick={() => emptyCart()}>Clear Cart</button>
+                    {/* <button style={{border:"1px solid black", borderRadius: "5px",backgroundColor:"white" , marginLeft:"770px",padding: "5px 22px",fontSize: "25px", marginTop: "-10px", marginBottom: "19px"}} className="checkout-btn" onClick={() => emptyCart()}>Check Out</button> */}
+                    <button style={{border:"1px solid black", borderRadius: "5px",backgroundColor:"white" , marginLeft:"692px",padding: "5px 22px", fontSize: "25px", marginTop: "-10px", marginBottom: "19px" }} className="clear-btn btn btn-warning m-2" onClick={() => emptyCart()}>Clear Cart</button>        
                 </h4>
+                <>
+                    <NavLink to='/cart' onClick={this} style={{textDecoration: "none", backgroundColor:"white",border:"1px solid black",borderRadius: "5px", marginLeft: "637px",padding: "5px 22px",fontSize: "25px", marginTop: "-10px", marginBottom: "100px", color: " black"}} >Continue Shopping</NavLink>
+                </> 
             </div> 
         </div>
         </section>
+        <Footer/>
     </>
   )
 }

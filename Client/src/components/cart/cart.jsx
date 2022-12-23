@@ -5,6 +5,8 @@ import './cart.css'
 import Header from "../header/Header"
 import Announcement from '../Assest/Announcement'
 import { useCart } from "react-use-cart";
+import Footer from '../Assest/Footer'
+
 
 const Cart = () => {
   const { addItem } = useCart();
@@ -13,7 +15,7 @@ const Cart = () => {
 
 
   useEffect(() => {
-    fetch('http://localhost:2000/api/getproduct')
+     fetch('http://localhost:2000/api/getproduct') 
     .then(res => res.json())
     .then(res => {
       setProducts(res.products)
@@ -58,7 +60,9 @@ const Cart = () => {
  
             </div>
           </div> 
+          <Footer/>
         </div>
+      
     )
 }
 

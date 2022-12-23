@@ -18,6 +18,17 @@ const Wrapper = styled.div`
 
 `;
 
+const Summary = styled.div`
+  // flex: 1;
+  border: 1.8px solid #023047;
+  border-radius: 55px;
+  padding: 20px;
+  margin-right: 500px;
+  margin-left: 500px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+`;
+
 const Title = styled.h1`
   font-weight: 300;
   font-size: 40px;
@@ -29,12 +40,14 @@ const Blog = () => {
 
     return (
     <div>
-        <Header/>
         <Announcement/>
+        <Header/>
         <Container>
             <Wrapper>
             { Blogimg.map(img => (<img style={{width: "100%",}} src={img} alt=''></img>))}
-                <Title><b>G6-NEWS</b></Title>
+                <Summary>
+                    <Title><b>G6-NEWS</b></Title>
+                </Summary>
                 <div className='blog-news'>
     {
     Blogimg1.map(img => (<img className='img1-news' src={img} alt=''></img>))

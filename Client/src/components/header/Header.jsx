@@ -31,9 +31,10 @@ const Left = styled.div`
 `;
 
 const Languge = styled.span`
-    font-size: 14px;
+    font-size: 25px;
     cursor: pointer;
-    margin-right: 20px;
+    margin-right: 25px;
+    margin-top: -4px;
     font-weight: 300;
 `;
 
@@ -98,8 +99,7 @@ const Header = () => {
                     <Languge>
                         <i>Welcome</i>
                     </Languge>
-                    <SearchContainer>
-                        
+                    <SearchContainer>                        
                         <Search style={{color: "white", fontSize: 30, cursor: "pointer"}}/>
                     </SearchContainer>
                 </Left>

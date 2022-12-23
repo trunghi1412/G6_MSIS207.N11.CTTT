@@ -4,6 +4,7 @@ import KeyboardDoubleArrowLeftIcon from '@mui/icons-material/KeyboardDoubleArrow
 import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArrowRight';
 import { sliderItems } from './Assest/data';
 import { useState } from "react";
+import { NavLink } from 'react-router-dom';
 
 
 const Container = styled.div`
@@ -120,7 +121,8 @@ const Slider = () => {
                     <Title>{item.title}</Title>
                     <Author>{item.author}</Author>    
                     <Description>{item.desciption}</Description>
-                    <Button><b>SHOP NOW</b></Button>
+                    {/* <Button><b>SHOP NOW</b></Button> */}
+                    <NavLink to='/cart' onClick={this} style={{ textDecoration: "none", color: "black", }}> <Button>SHOP NOW</Button></NavLink>
                 </InforContainer>
             </Slide>
             ))}
