@@ -1,22 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap');
-.container-blog {
-    width: 1500px;
-    height: 150px;
+.container {
     height: fit-content;
-    margin-left: 131px;
-    margin-top: 110px;
-    letter-spacing: 3px;
+    margin-top: 54px;
 }
 
 .blog-avt {
-    /* width: 1520px;
-    height: 600px; */
-    width: 1688px;
-    height: 790px;
+    width: 1520px;
+    height: 600px;
 }
 
 .blog-tit {
-    text-align: center;
     font-size: 35px;
     font-family: Rubik Bubbles;
     margin-top: 40px;    
@@ -46,11 +39,8 @@
 }
 
 .web-news {
-    width: 1500px;
-    height: 550px;
-    margin-left: 16px;
-    /* margin-top: 150px; */
-    margin-top: 205px;
+    margin-left: 80px;
+    
 }
 
 .blog-news {
@@ -68,25 +58,29 @@
 }
 
 .news-tit {
-    text-align: justify;
-    font-size: 25px;
-    line-height: 2;
+    font-size: 20px;
     font-weight: bolder;
     color: orange;
     
 }
 
 .news-desc {
-    font-size: 15px;
-    line-height: 2;
+    font-size: 18px;
     font-weight: bold;
-    
+    border: 3px solid #023047;
+    border-radius: 30px;
+    padding: 20px 40px;
+    margin-left: 5px;
+    margin-right: 20px;
+    line-height: 1.5;
+    margin-top: 15px;
 }
 
 .post-date {
-    font-size: 13px;
+    font-size: 15px;
+    font-weight: lighter bold;
     text-align: center;
-    font-weight: normal;
+    line-height: 3;
 }
 
 

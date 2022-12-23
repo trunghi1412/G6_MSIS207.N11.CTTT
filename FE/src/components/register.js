@@ -24,8 +24,7 @@ const Register = () => {
   };
 
   return (
-    <div>
-    <div className="cover-1">
+    <div className="cover">
       <div className="log-name">Register</div>
 
       <form onSubmit={handleRegister}>
@@ -67,7 +66,6 @@ const Register = () => {
           </NavLink>
         </div>
       </form>
-    </div>
     </div>
   );
 };

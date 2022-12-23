@@ -1,0 +1,38 @@
+export const InforAbout = [
+    {
+        id: "MSSV: " + 19521763,
+        name: "Nguyễn Thanh Lộc",
+        fb: "--- Thanh Lộc",
+        ins: "--- Thanh Lộc",
+        phone: "--- 0909123456",
+        img: "https://scontent.fsgn5-3.fna.fbcdn.net/v/t39.30808-1/298755511_3397948613864174_7705629748566994208_n.jpg?stp=dst-jpg_s320x320&_nc_cat=104&ccb=1-7&_nc_sid=7206a8&_nc_ohc=CzT0T690xDsAX-eij_t&_nc_ht=scontent.fsgn5-3.fna&oh=00_AfA363VCAocU8sbXvQ_tDPrbHC3jLrVBJU0F8y4UwfnnTQ&oe=63A3CF0D",
+        bg: "d6ccc2",
+    },
+    {
+        id: "MSSV: " + 19521511,
+        name: "Phạm Trung Hiếu",
+        fb: "--- Phạm Trung Hiếu",
+        ins: "--- Phạm Trung Hiếu",
+        phone: "--- 0909123456",
+        img: "https://scontent.fsgn5-10.fna.fbcdn.net/v/t39.30808-1/275813256_1413072099123485_8944794104066575066_n.jpg?stp=dst-jpg_p320x320&_nc_cat=107&ccb=1-7&_nc_sid=7206a8&_nc_ohc=KZYw_9QZkvcAX88hXDZ&_nc_ht=scontent.fsgn5-10.fna&oh=00_AfAUoxYTggeeK1bxOWFLrIs8vZnU9T82COyrCl-Ewt66gA&oe=63A3B53B",
+        bg: "f5ebe0",
+    },
+    {
+        id: "MSSV: " + 19521382,
+        name: "Tăng Trí Đức",
+        fb: "--- Tăng Camarade",
+        ins: "--- Tăng Camarade",
+        phone: "--- 0909123456",
+        img: "https://scontent.fsgn5-14.fna.fbcdn.net/v/t1.6435-9/81375700_2541570046164871_5048231609698877440_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=HUrIDRLbD6AAX8yIZ4s&_nc_ht=scontent.fsgn5-14.fna&oh=00_AfCBmfPFEvZtsLgYtiARk9igkWgcdOSc5TyB8_AzIca80g&oe=63B781A3",
+        bg: "e3d5ca",
+    },
+    {
+        id: "MSSV: " + 19521602,
+        name: "Đậu Đình Huy",
+        fb: "---  Đình Huy ",
+        ins: "---  Đình Huy ",
+        phone: "---  0909123456 ",
+        img: "https://scontent.fsgn5-15.fna.fbcdn.net/v/t39.30808-1/299202460_2028998990794748_2885243375628285658_n.jpg?stp=dst-jpg_p320x320&_nc_cat=111&ccb=1-7&_nc_sid=7206a8&_nc_ohc=Tr81byD4u6EAX-VnkzW&_nc_ht=scontent.fsgn5-15.fna&oh=00_AfBH1xQZigCNgaJruQ6CfCjbX5T0n--fVoDM_6xE_75RUQ&oe=63A31155",
+        bg: "d5bdaf",
+    },
+  ];

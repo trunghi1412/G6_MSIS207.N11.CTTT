@@ -5,32 +5,61 @@ import Blogimg2 from './blogImg2'
 import Blogimg3 from './blogImg3'
 import Blogimg4 from './blogImg4'
 import Blogimg5 from './blogImg5'
-
 import './blog.css'
+import styled from 'styled-components'
+import Header from '../header/Header'
+import Announcement from '../Assest/Announcement'
+import Footer from '../Assest/Footer'
+
+
+const Container = styled.div``;
+
+const Wrapper = styled.div`
+
+`;
+
+const Summary = styled.div`
+  // flex: 1;
+  border: 1.8px solid #023047;
+  border-radius: 55px;
+  padding: 20px;
+  margin-right: 500px;
+  margin-left: 500px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+`;
+
+const Title = styled.h1`
+  font-weight: 300;
+  font-size: 40px;
+  text-align: center;
+`;
+
 
 const Blog = () => {
 
     return (
-        <div className='container-blog'>
-    {
-    Blogimg.map(img => (<img className='blog-avt' src={img} alt=''></img>))
-    }
-
-     <div className='web-news'> 
-     <p className='blog-tit'>HIRITO SHOP NEWS </p>
-    
-    <div className='blog-news'>
+    <div>
+        <Announcement/>
+        <Header/>
+        <Container>
+            <Wrapper>
+            { Blogimg.map(img => (<img style={{width: "100%",}} src={img} alt=''></img>))}
+                <Summary>
+                    <Title><b>G6-NEWS</b></Title>
+                </Summary>
+                <div className='blog-news'>
     {
     Blogimg1.map(img => (<img className='img1-news' src={img} alt=''></img>))
     }
     <div className='news'>
-        <p className='news-tit'>How to effortlessly achieve a real figure.</p>
+        <p className='news-tit'>How to effortlessly achieve a real figure. How to effortlessly achieve a real figure.</p>
 
         <p className='news-desc'>WARNING: ONLY RAIL WATER, BIRD SHOCK, AND MARLEY'S MILITARY TITANS FLOW FOR FREE IN THIS 
     WORLD; MONEY DOESN'T FLOOR FROM HEAVEN. The information that follows should only be read for share-related 
     information, not for investment advice. IT IS ENTIRELY UP TO YOU WHETHER TO VOTE OR JOIN. IF YES, JAPAN IS NOT RESPONSIBLE FOR THE OPPORTUNITIES + RISKS OF ASSETS FIGURE.</p>
 
-        <p className='post-date'>Post by : Hirito Shop &#183; Wednesday-23-11-2022 </p>
+        <p className='post-date'>Post by : Hirito Shop &#183; Wednesday-30st-2022 </p>
     </div>
        
     </div>
@@ -47,7 +76,7 @@ const Blog = () => {
         He comes with three face plates: a neutral expression, a combat-
         focused expression, and a smiley expression that some claim makes him look like the devil.</p>
 
-        <p className='post-date'>Post by : Hirito Shop &#183; Tuesday-29-11-2022 </p>
+        <p className='post-date'>Post by : Hirito Shop &#183; Tuesday-29th-2022 </p>
     </div>
        
     </div>
@@ -65,7 +94,7 @@ const Blog = () => {
         and an additional lower body for the game. She also has an "Indomitable" supporter with her. Remember 
         to include her in your collection!</p>
 
-        <p className='post-date'>Post by : Hirito Shop &#183; Monday-28-11-2022 </p>
+        <p className='post-date'>Post by : Hirito Shop &#183; Monday-28th-2022 </p>
     </div>
        
     </div>
@@ -83,7 +112,7 @@ const Blog = () => {
         to add a certain baby to your collection  Now!! Let's go : 3 Chika Fujiwara 
         will be today's character :3 !! Shuchiin Academy's student council secretary has aired on the cutest Nendoroid xD version of the world.</p>
 
-        <p className='post-date'>Post by : Hirito Shop &#183; Sunday-27-11-2022 </p>
+        <p className='post-date'>Post by : Hirito Shop &#183; Sunday-27th-2022 </p>
     </div>
        
     </div>
@@ -99,7 +128,7 @@ const Blog = () => {
         He comes with three face plates: a neutral expression, a combat-
         focused expression, and a smiley expression that some claim makes him look like the devil.</p>
 
-        <p className='post-date'>Post by : Hirito Shop &#183; Tuesday-29-11-2022 </p>
+        <p className='post-date'>Post by : Hirito Shop &#183; Tuesday-29th-2022 </p>
     </div>
        
     </div>
@@ -116,7 +145,7 @@ const Blog = () => {
         He comes with three face plates: a neutral expression, a combat-
         focused expression, and a smiley expression that some claim makes him look like the devil.</p>
 
-        <p className='post-date'>Post by : Hirito Shop &#183; Tuesday-29-11-2022 </p>
+        <p className='post-date'>Post by : Hirito Shop &#183; Tuesday-29th-2022 </p>
     </div>
        
     </div>
@@ -133,7 +162,7 @@ const Blog = () => {
         He comes with three face plates: a neutral expression, a combat-
         focused expression, and a smiley expression that some claim makes him look like the devil.</p>
 
-        <p className='post-date'>Post by : Hirito Shop &#183; Tuesday-29-11-2022 </p>
+        <p className='post-date'>Post by : Hirito Shop &#183; Tuesday-29th-2022 </p>
     </div>
        
     </div>
@@ -150,13 +179,15 @@ const Blog = () => {
         He comes with three face plates: a neutral expression, a combat-
         focused expression, and a smiley expression that some claim makes him look like the devil.</p>
 
-        <p className='post-date'>Post by : Hirito Shop &#183; Tuesday-29-11-2022 </p>
+        <p className='post-date'>Post by : Hirito Shop &#183; Tuesday-29th-2022 </p>
     </div>
        
     </div>
-
-    </div>       
-        </div>
+            </Wrapper>
+        </Container>
+        <Footer/>
+    </div>
+    
     )
 }
 

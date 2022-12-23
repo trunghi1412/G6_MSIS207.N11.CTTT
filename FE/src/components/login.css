@@ -8,25 +8,20 @@
 }
 
 
- .cover {
+.cover {
     background-color: white;
     width: 30%;
     height: 70%;
-    margin-left: 570px;
     position: relative;
-    /* border-radius: 1em; */
-    border-radius: 8px;
+    border-radius: 1em;
     box-shadow: 0 0.188em 1.550em rgb(21, 13, 13);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    margin-top: 145px;
-    /* padding: 250px 0; */
-    padding: 67px 0;
-} 
+    margin-top: 200px;
+}
 .log-name{
-    margin-left: -18px;
     font-size: 30px;
     font-weight: bold;
     margin-bottom: 40px;
@@ -44,7 +39,8 @@
     border-radius: 3px;
     background-color: rgb(73, 92, 18);
     background-position: center;
-    background-size: contain;  
+    background-size: contain;
+   
     cursor: pointer;
 }
 
@@ -59,13 +55,13 @@ input {
     background-color: white;
     font-size: 22px;
     text-decoration: none;
-    margin-left: 30px;
 }
 
-.login-name-reg {
-    width: 55%;
-    /* height: 3em; */
-    height: 70px;
+
+
+.login-name {
+    width: 40%;
+    height: 3em;
     background: linear-gradient(135deg, red 0%, blue 100%);
     color: white;
     display: flex;
@@ -76,15 +72,12 @@ input {
     cursor: pointer;
     font-weight: 500;
     font-size: 22px;
-    margin-left: 70px;
-    margin-top: 30px;
 }
 
- .login-name-reg:hover {
+.login-name:hover {
+    background: linear-gradient(45deg, rgb(247, 85, 85) 0%, rgb(184, 244, 63) 100%);
     color: white;
-    background: linear-gradient(45deg, rgba(248,85,85,0) 2%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);    
- }
-
+}
 
 .text {
     position: relative;
@@ -101,16 +94,8 @@ input {
     
 }
 
-.no-account1 {
-    font-size: 17px;
-    margin-left: 63px;
-    margin-top: 20px;
-    font-style: normal;
-}
-
 .no-account2 {
-    font-size: 17px;
+    font-size: 15px;
     margin-left: 30px;
     margin-top: 20px;
-    font-style: normal;
 }

@@ -37,7 +37,6 @@ const LoginPage = () => {
   };
 
   return (
-    <div>
     <div className="cover">
       <div className="log-name">Login</div>
 
@@ -71,7 +70,6 @@ const LoginPage = () => {
           </NavLink>
         </div>
       </form>
-    </div>
     </div>
   );
 };

@@ -1,54 +1,60 @@
-
+/* 
 
 * {
-    margin: 0;
+    margin-right: 0;
     box-sizing: border-box;
     font-family: Arial;
     
 }
 
 
- .cover {
+.page {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.75em;
+    
+    
+}
+
+.cover {
     background-color: white;
+    
     width: 30%;
-    height: 70%;
-    margin-left: 570px;
+    height: 50%;
     position: relative;
-    /* border-radius: 1em; */
-    border-radius: 8px;
-    box-shadow: 0 0.188em 1.550em rgb(21, 13, 13);
+    border-radius: 8px  ;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    margin-top: 145px;
-    /* padding: 250px 0; */
-    padding: 67px 0;
-} 
+    padding: 30px 0px;
+}
 .log-name{
-    margin-left: -18px;
     font-size: 30px;
     font-weight: bold;
-    margin-bottom: 40px;
 }
 .login-alt {
     width: 80%;
-    height: 3em;
+    height: 20px;
     display: flex;
     justify-content: space-around;
 }
 
 .login-alt div {
-    width: 47.5%;
+    width: 45%;
     height: 90%;
     border-radius: 3px;
     background-color: rgb(73, 92, 18);
     background-position: center;
-    background-size: contain;  
+    background-size: contain;
+   
     cursor: pointer;
 }
 
-input {
+.ip-reg {
     height: 64px;
     width: 80%;
     border-radius: 4px;
@@ -58,13 +64,13 @@ input {
     outline: none;
     background-color: white;
     font-size: 22px;
-    text-decoration: none;
-    margin-left: 30px;
+    margin-left: 25px;
 }
+
+
 
 .login-name-reg {
     width: 55%;
-    /* height: 3em; */
     height: 70px;
     background: linear-gradient(135deg, red 0%, blue 100%);
     color: white;
@@ -76,41 +82,33 @@ input {
     cursor: pointer;
     font-weight: 500;
     font-size: 22px;
-    margin-left: 70px;
+    margin-left: 66px;
     margin-top: 30px;
 }
 
- .login-name-reg:hover {
+.login-name:hover {
+    background: linear-gradient(45deg, rgb(247, 85, 85) 0%, rgb(184, 244, 63) 100%);
     color: white;
-    background: linear-gradient(45deg, rgba(248,85,85,0) 2%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);    
- }
-
+}
 
 .text {
     position: relative;
-    bottom: -2em;
+    bottom: -8px;
     font-size: 15px;
 
 }
 
 
 
-.sign-up2 {
+.sign-up1 {
     text-decoration: underline;
-    color: rgb(35, 148, 110);  
+    color: rgb(35, 148, 110);
+    margin-left: 10px;  
     
 }
 
 .no-account1 {
-    font-size: 17px;
-    margin-left: 63px;
+    font-size: 15px;
+    margin-left: 60px;
     margin-top: 20px;
-    font-style: normal;
-}
-
-.no-account2 {
-    font-size: 17px;
-    margin-left: 30px;
-    margin-top: 20px;
-    font-style: normal;
-}
+} */

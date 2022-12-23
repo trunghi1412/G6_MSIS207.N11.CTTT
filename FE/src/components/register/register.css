@@ -1,94 +1,16 @@
-
-
-* {
-    margin: 0;
-    box-sizing: border-box;
-    font-family: Arial;
-    
-}
-
-.log-name-1{
-    margin-left: -9px;
-    font-size: 30px;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-.login-alt {
-    width: 80%;
-    height: 20px;
-    display: flex;
-    justify-content: space-around;
-}
-
-.login-alt div {
-    width: 45%;
-    height: 90%;
-    border-radius: 3px;
-    background-color: rgb(73, 92, 18);
-    background-position: center;
-    background-size: contain;
-   
-    cursor: pointer;
-}
-
-.ip-reg {
-    height: 64px;
-    width: 80%;
-    border-radius: 4px;
-    text-align: center;
-    border: none;
-    border-bottom: 4px solid #ccc;
-    outline: none;
+.cover-1 {
     background-color: white;
-    font-size: 22px;
-    margin-left: 25px;
-}
-
-
-
-.login-name-reg-1 {
-    width: 55%;
-    height: 70px;
-    /* background: linear-gradient(135deg, red 0%, blue 100%); */
-    background: linear-gradient(45deg, rgba(94,65,65,0) 7%, rgba(180,69,25,1) 43%, rgba(0,212,255,1) 98%);
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 0.5s;
-    border-radius: 8px;
-    cursor: pointer;
-    font-weight: 500;
-    font-size: 22px;
-    margin-left: 66px;
-    margin-top: 30px;
-}
-
-.login-name-reg-1:hover {
-    /* background: linear-gradient(45deg, rgb(247, 85, 85) 0%, rgb(184, 244, 63) 100%); */
-    background: linear-gradient(45deg, rgba(94,65,65,0) 2%, rgba(34,149,86,1) 38%, rgba(0,212,255,1) 100%);
-    color: white;
-}
-
-.text {
+    width: 30%;
+    height: 70%;
+    margin-left: 570px;
     position: relative;
-    bottom: -8px;
-    font-size: 15px;
-
-}
-
-
-
-.sign-up1 {
-    text-decoration: underline;
-    color: rgb(35, 148, 110);
-    margin-left: 10px;  
-    
-}
-
-.no-account1 {
-    font-size: 15px;
-    margin-left: 60px;
-    margin-top: 20px;
-}
+    /* border-radius: 1em; */
+    border-radius: 8px;
+    box-shadow: 0 0.188em 1.550em rgb(21, 13, 13);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 120px;
+    padding: 35px 0;
+} 

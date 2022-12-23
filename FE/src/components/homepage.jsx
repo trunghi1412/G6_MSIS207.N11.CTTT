@@ -1,10 +1,10 @@
 import React from 'react'
 import './homepage.css'
-import Slider from '../Slider'
-import Announcement from '../Assest/Announcement'
-import Header from '../header/Header'
-import Footer from '../Assest/Footer'
-import Categories from '../Categories/Catgories'
+import Slider from './Slider'
+import Announcement from './Assest/Announcement'
+import Header from './Header'
+import Footer from './Assest/Footer'
+import Categories from './Categories/Catgories'
 
 
 
