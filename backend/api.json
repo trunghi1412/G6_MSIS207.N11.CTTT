@@ -1,0 +1,301 @@
+{
+    "openapi": "3.0.3",
+    "info": {
+        "version" : "1.0.1",
+        "title": "API - G6 - OpenAPI 3.0",
+        "description": "This is a documentation of G6",
+        "license" : {
+            "name" : "MIT",
+            "url":"https://opensource.org/licenses/MIT"
+        }
+    },
+    "servers": [
+      {
+        "url": "http://localhost:5000"
+      }
+    ],
+    "tags" : [
+        {
+            "name" : " Online-Figure-Website",
+            "description" : " Figure-Website API"
+        }
+    ],
+    "schemes": ["http"],
+    "consumes": ["application/json"],
+    "produces" : ["application/json"],
+    "paths" : {
+        "/api/products" :{
+            "get" :{
+                "tags" : ["Admin"],
+                "summary" : "Get All Product",
+                "Access-Control-Allow-Headers":"Content-Type",
+                "responses":{
+                    "200" : {
+                        "message": "OK",
+                        "description" : "OK",
+                        "schema":{
+                            "$ref" :  "#/definitions/UserResponse"
+                        }
+                    }
+                }
+            }
+        },
+        "/api/products/find/{id}" :{
+            "get" :{
+                "tags" : ["Admin"],
+                "summary" : "Get Product have ID",
+                "parameters":[
+                    {
+                        "in":"path",
+                        "name":"id",
+                        "description":"Product ID",
+                        "required": true,
+                        "example": "637b55f03c9ad75f2159dac3",
+                        "schema":{
+                            "type":"string"
+                        }
+                    }],
+                "responses":{
+                    "200" : {
+                        "message": "OK",
+                        "description" : "OK",
+                        "schema":{
+                            "$ref" :  "#/definitions/UserResponse"
+                        }
+                    }
+                }
+            }
+        },
+        "/api/login":{
+          "post":{
+              "tags" : ["Admin"],
+              "summary":"Login to System",
+              "parameters":[
+                  {
+                      "name": "body",
+                      "in" : "body",
+                      "description" : "Your Account",
+                      "required": true,
+                      "schema" :{
+                        "type": "object",
+                          "properties":{
+                              "email": {
+                                  "type": "string"
+                              },
+                              "password": {
+                                  "type": "string"
+                              },
+                              "role": {
+                                "type": "string"
+                            }
+                          }
+                      }
+                  }
+  
+              ],
+              "responses":{
+                  "200":{
+                          "message": "OK",
+                          "description" : "OK",
+                          "schema":{
+                              "$ref" :  "#/definitions/UserResponse"
+                          }
+                  }
+              }
+          }
+      },
+        "/api/register":{
+            "post":{
+                "tags" : ["Admin"],
+                "Access-Control-Allow-Headers":"Content-Type",
+                "summary":"Add New User",
+                "parameters":[
+                    {
+                        "name": "body",
+                        "in" : "body",
+                        "description" : "Your Username",
+                        "required": true,
+                        "schema" :{
+                            "properties":{
+                                "email": {
+                                    "type": "string",
+                                    "example": "tesstt-1@gmail.com"
+                                },
+                                "password": {
+                                    "type": "string",
+                                    "example": "1234567889"
+                                },
+                                "name": {
+                                    "type": "string",
+                                    "example": "1234567889"
+                                }
+                            }
+                        }
+                    }
+  
+                ],
+                "responses":{
+                    "200":{
+                            "message": "OK",
+                            "description" : "OK",
+                            "schema":{
+                                "$ref" :  "#/definitions/AdminResponse"
+                            }
+                    }
+                }
+            }
+        },
+        "/admin/delete-admin/{id}" :{
+          "delete" :{
+              "tags" : ["Admin"],
+              "summary" : "Delete Admin With ID",
+              "parameters":[
+                  {
+                      "in":"path",
+                      "name":"id",
+                      "description":"ID",
+                      "required": true,
+                      "schema":{
+                          "type":"string"
+                      }
+                  }],
+              "responses":{
+                  "success" : {
+                      "message": "OK",
+                      "description" : "Admin is successful deleted"
+                  }
+              }
+          }
+      },
+      "/admin/update-admin/{id}":{
+          "put":{
+              "tags" : ["Admin"],
+              "summary":"Update Admin in System",
+              "parameters":[
+                  {
+                      "in":"path",
+                      "name":"id",
+                      "description":" ID",
+                      "required": true,
+                      "schema":{
+                          "type":"string"
+                      }
+                  },
+                  {
+                      "name": "body",
+                      "in" : "body",
+                      "required": true,
+                      "schema" :{
+                          "properties":{
+                              "name": {
+                                  "type": "string"
+                              },
+                              "image":{
+                                  "type":"string"
+                              },
+                              "role":{
+                                  "type":"string"
+                              }
+                          }
+                      }
+                  }
+  
+              ],
+              "responses":{
+                  "200":{
+                          "message": "OK",
+                          "description" : "OK",
+                          "schema":{
+                              "$ref" :  "#/definitions/product"
+                          }
+                  }
+              }
+          }
+      },
+        "/api/users":{
+            "post":{
+                "tags" : ["User"],
+                "summary":"Login to System",
+                "parameters":[
+                    {
+                        "name": "body",
+                        "in" : "body",
+                        "description" : "Your Account",
+                        "required": true,
+                        "schema" :{
+                          "type": "object",
+                            "properties":{
+                                "email": {
+                                    "type": "string"
+                                },
+                                "password": {
+                                    "type": "string"
+                                },
+                                "role": {
+                                  "type": "string"
+                              }
+                            }
+                        }
+                    }
+  
+                ],
+                "responses":{
+                    "200":{
+                            "message": "OK",
+                            "description" : "OK",
+                            "schema":{
+                                "$ref" :  "#/definitions/UserResponse"
+                            }
+                    }
+                }
+            }
+        },
+        "/auth/register":{
+          "post":{
+              "tags" : ["User"],
+              "Access-Control-Allow-Headers":"Content-Type",
+              "summary":"Add New User",
+              "parameters":[
+                  {
+                      "name": "body",
+                      "in" : "body",
+                      "description" : "Your Username",
+                      "required": true,
+                      "schema" :{
+                          "properties":{
+                              "email": {
+                                  "type": "string",
+                                  "example": "patientttt-1@gmail.com"
+                              },
+                              "password": {
+                                  "type": "string",
+                                  "example": "1234567889"
+                              },
+                              "name": {
+                                  "type": "string",
+                                  "example": "1234567889"
+                              },
+                              "role": {
+                                  "type": "string",
+                                  "example": "patient"
+                              }
+                          }
+                      }
+                  }
+  
+              ],
+              "responses":{
+                  "200":{
+                          "message": "OK",
+                          "description" : "OK",
+                          "schema":{
+                              "$ref" :  "#/definitions/UserResponse"
+                          }
+                  }
+              }
+          }
+      }
+      
+    }
+    
+  }

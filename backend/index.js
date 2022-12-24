@@ -7,7 +7,10 @@ const orders = require("./routes/orders");
 const stripe = require("./routes/stripe");
 const productsRoute = require("./routes/products");
 const userRoute = require("./routes/user");
+const swaggerUi = require("swagger-ui-express")
+const swaggerDocument = require("./api.json");
 
+var bodyParser = require('body-parser')
 
 // const products = require("./products");
 
@@ -16,8 +19,9 @@ const app = express();
 require("dotenv").config();
 
 app.use(express.json());
-app.use(cors());
+app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
+app.use(cors({ origin: "*" }));
 app.use("/api/register", register);
 app.use("/api/login", login);
 app.use("/api/orders", orders);
@@ -35,6 +39,14 @@ app.get("/", (req, res) => {
 
 const uri = process.env.DB_URI;
 const port = process.env.PORT || 5000;
+app.use(express.json());
+
+app.use(
+  bodyParser.urlencoded({
+    extended: true
+  })
+);
+app.use(bodyParser.json());
 
 app.listen(port, () => {
   console.log(`Server running on port: ${port}...`);

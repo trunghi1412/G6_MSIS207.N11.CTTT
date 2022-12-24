@@ -143,9 +143,7 @@ const Header = () => {
                   <Nav>
                     <NavLink to='/blog' onClick={this} style={{ textDecoration: "none", color: "black"}}> Blog </NavLink>
                   </Nav>
-                  <Nav>
-                    <NavLink to='/about' onclick={this} style={{ textDecoration: "none", color: "black"}}>About</NavLink>
-                  </Nav>
+                  
                 </Center>
                 <Right>
                   <Person>
