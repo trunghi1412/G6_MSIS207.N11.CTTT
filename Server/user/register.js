@@ -30,7 +30,6 @@ app.post("/api/register", async (req, res) => {
           console.log(cat);
         }
       });
-  
       console.log("create success");
       res.json({ status: "200", message: "ok" });
     } catch (err) {
