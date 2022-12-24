@@ -61,9 +61,9 @@ const CreateProduct = () => {
         />
         <select onChange={(e) => setBrand(e.target.value)} required>
           <option value="">Select Brand</option>
-          <option value="Type1">Type 1</option>
-          <option value="Type2">Type 2</option>
-          <option value="Type3">Type 3</option>
+          <option value="Type1">Anime</option>
+          <option value="Type2">Mecha</option>
+          
           <option value="other">Other</option>
         </select>
         <input
