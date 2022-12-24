@@ -4,15 +4,15 @@ import Footer from '../Assest/Footer'
 import Header from '../header/Header'
 import SliderforAbout from './SliderforAbout'
 
-const about = () => {
+const About = () => {
   return (
     <div>
-        <Announcement/>
-        <Header/>
+        
+        
         <SliderforAbout/>
         <Footer/>
     </div>
   )
 }
 
-export default about
+export default About

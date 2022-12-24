@@ -91,8 +91,8 @@ const Text = styled.p`
 const Intro = () => {
   return (
 <div> 
-    <Announcement/>     
-    {/* <Header/> */}
+      
+    
     <Container>
       <Wrapper>
         {imgIntro.map(img => (<img className='intro-avt' src={img} alt=''></img>))}

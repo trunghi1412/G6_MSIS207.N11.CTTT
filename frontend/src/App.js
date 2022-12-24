@@ -22,7 +22,7 @@ import Summary from "./components/admin/Summary";
 import CreateProduct from "./components/admin/CreateProduct";
 import Intro from "./components/introduction/intro";
 import Blog from "./components/blog/blog";
-import about from "./components/about/about";
+import About from "./components/about/about";
 import CheckoutSuccess from "./components/CheckoutSuccess";
 
 import HomePage from "./components/homepage"
@@ -48,6 +48,8 @@ function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/intro" element={<Intro/>} />
             <Route path="/blog" element={<Blog/>} />
+            <Route path="/about" element={<About/>} />
+
             {/* <Route path="/checkout" element={<about/>} /> */}
             <Route path="/cart" element={<Cart />} />
             <Route path="/checkout-success" element={<CheckoutSuccess />} />

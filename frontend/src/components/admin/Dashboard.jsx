@@ -10,7 +10,7 @@ const Dashboard = () => {
   return (
     <StyledDashboard>
       <SideNav>
-        <h3>Quick Links</h3>
+        <h3>Management</h3>
         {/* <NavLink
           className={({ isActive }) =>
             isActive ? "link-active" : "link-inactive"
