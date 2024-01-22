@@ -1,2 +1,5 @@
 # G6_MSIS207.N11.CTTT
-Web của group 6
+TEAM - LEADER: Pham Trung Hieu
+Front End: HTML, CSS, ReactJS
+BackEnd: JavaScript
+Database: FireBase
